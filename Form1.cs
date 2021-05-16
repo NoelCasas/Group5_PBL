@@ -43,7 +43,9 @@ namespace Group5_PBL
             this.Close();
         }
 
-        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+      
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
