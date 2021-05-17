@@ -16,6 +16,8 @@ namespace Group5_PBL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            LoadScreen screenLoad = new LoadScreen();
+            screenLoad.ShowDialog();
             Application.Run(new Form1());
         }
     }
