@@ -54,5 +54,51 @@ namespace Group5_PBL
         {
 
         }
+
+      
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel2.Visible = false;
+            
+            
+            
+            if (panel3.Visible == true)
+            {
+                bunifuFlatButton3.Enabled = true;             
+                bunifuFlatButton2.Enabled = false;
+                bunifuFlatButton4.Enabled = true;
+            
+            }
+            else
+            {
+                bunifuFlatButton2.Enabled = false;
+                bunifuFlatButton3.Enabled = true;
+                bunifuFlatButton4.Enabled = true;
+            }
+            
+        }
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            panel3.Visible = false;
+            
+
+            if (panel2.Visible == true)
+            {
+                bunifuFlatButton2.Enabled = true;
+                bunifuFlatButton3.Enabled = false;
+                bunifuFlatButton4.Enabled = true;
+            }
+            else
+            {
+                bunifuFlatButton3.Enabled = true;
+                bunifuFlatButton2.Enabled = false;
+                bunifuFlatButton4.Enabled = true;
+            }
+
+
+        }
     }
 }
