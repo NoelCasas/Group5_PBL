@@ -49,5 +49,10 @@ namespace Group5_PBL
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

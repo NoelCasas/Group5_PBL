@@ -108,5 +108,20 @@
   <ItemGroup>
     <None Include="Resources\LoadscreenLogo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Covid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refer_to_manual_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_50px1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
