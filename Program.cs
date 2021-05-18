@@ -18,7 +18,7 @@ namespace Group5_PBL
             Application.SetCompatibleTextRenderingDefault(false);
             LoadScreen screenLoad = new LoadScreen();
             screenLoad.ShowDialog();
-            Application.Run(new Form1());
+            Application.Run(new Region());
         }
     }
 }

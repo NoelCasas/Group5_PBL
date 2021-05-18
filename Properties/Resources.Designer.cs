@@ -153,6 +153,26 @@ namespace Group5_PBL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Ph_Map {
+            get {
+                object obj = ResourceManager.GetObject("Ph Map", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pulse {
+            get {
+                object obj = ResourceManager.GetObject("Pulse", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap refer_to_manual_100px {
             get {
                 object obj = ResourceManager.GetObject("refer_to_manual_100px", resourceCulture);

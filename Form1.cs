@@ -12,10 +12,14 @@ namespace Group5_PBL
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        
+        private Region RegionForm;
+        public Form1(Region regionForm)
         {
+            this.RegionForm = regionForm;
             InitializeComponent();
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,6 +44,7 @@ namespace Group5_PBL
 
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
         {
+            this.RegionForm.Close();
             this.Close();
         }
 
