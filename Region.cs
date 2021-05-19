@@ -34,11 +34,16 @@ namespace Group5_PBL
             }
             else
             {
-
+                MessageBox.Show("Feature not available yet");
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

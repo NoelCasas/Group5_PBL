@@ -66,29 +66,24 @@ namespace Group5_PBL
         {
             panel3.Visible = true;
             panel2.Visible = false;
-            
-            
-            
+            panel4.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+
             if (panel3.Visible == true)
             {
                 bunifuFlatButton3.Enabled = true;             
                 bunifuFlatButton2.Enabled = false;
                 bunifuFlatButton4.Enabled = true;
-            
             }
-            else
-            {
-                bunifuFlatButton2.Enabled = false;
-                bunifuFlatButton3.Enabled = true;
-                bunifuFlatButton4.Enabled = true;
-            }
-            
         }
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             panel2.Visible = true;
             panel3.Visible = false;
-            
+            panel4.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
 
             if (panel2.Visible == true)
             {
@@ -96,19 +91,78 @@ namespace Group5_PBL
                 bunifuFlatButton3.Enabled = false;
                 bunifuFlatButton4.Enabled = true;
             }
-            else
-            {
-                bunifuFlatButton3.Enabled = true;
-                bunifuFlatButton2.Enabled = false;
-                bunifuFlatButton4.Enabled = true;
-            }
-
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+
+            if (panel4.Visible == true)
+            {
+                bunifuFlatButton2.Enabled = true;
+                bunifuFlatButton4.Enabled = false;
+                bunifuFlatButton3.Enabled = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel4.Visible = false;
+            panel6.Visible = false;
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel6.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel4.Visible = false;
         }
     }
 }
