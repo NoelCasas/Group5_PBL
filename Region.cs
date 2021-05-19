@@ -37,5 +37,10 @@ namespace Group5_PBL
 
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
