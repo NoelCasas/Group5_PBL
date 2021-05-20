@@ -69,12 +69,14 @@ namespace Group5_PBL
             panel4.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
+            panel7.Visible = false;
 
             if (panel3.Visible == true)
             {
                 bunifuFlatButton3.Enabled = true;             
                 bunifuFlatButton2.Enabled = false;
                 bunifuFlatButton4.Enabled = true;
+                bunifuFlatButton1.Enabled = true;
             }
         }
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
@@ -84,12 +86,14 @@ namespace Group5_PBL
             panel4.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
+            panel7.Visible = false;
 
             if (panel2.Visible == true)
             {
                 bunifuFlatButton2.Enabled = true;
                 bunifuFlatButton3.Enabled = false;
                 bunifuFlatButton4.Enabled = true;
+                bunifuFlatButton1.Enabled = true;
             }
         }
 
@@ -105,12 +109,14 @@ namespace Group5_PBL
             panel3.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
+            panel7.Visible = false;
 
             if (panel4.Visible == true)
             {
                 bunifuFlatButton2.Enabled = true;
                 bunifuFlatButton4.Enabled = false;
                 bunifuFlatButton3.Enabled = true;
+                bunifuFlatButton1.Enabled = true;
             }
         }
 
@@ -121,6 +127,7 @@ namespace Group5_PBL
             panel3.Visible = false;
             panel4.Visible = false;
             panel6.Visible = false;
+            panel7.Visible = false;
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
@@ -140,6 +147,7 @@ namespace Group5_PBL
             panel3.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
+            panel7.Visible = false;
         }
 
         private void label26_Click(object sender, EventArgs e)
@@ -154,6 +162,7 @@ namespace Group5_PBL
             panel3.Visible = false;
             panel5.Visible = false;
             panel6.Visible = false;
+            panel7.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -163,6 +172,30 @@ namespace Group5_PBL
             panel3.Visible = false;
             panel5.Visible = false;
             panel4.Visible = false;
+            panel7.Visible = false;
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            panel7.Visible = true;
+            panel2.Visible = false;
+            panel3.Visible = false;
+            panel5.Visible = false;
+            panel6.Visible = false;
+            panel4.Visible = false;
+           
+            if (panel7.Visible == true)
+            {
+                bunifuFlatButton4.Enabled = true;
+                bunifuFlatButton1.Enabled = false;
+                bunifuFlatButton3.Enabled = true;
+                bunifuFlatButton2.Enabled = true;
+            }
+        }
         }
     }
-}
