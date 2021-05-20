@@ -154,7 +154,4 @@
   <data name="Ph Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ph Map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="188423575_825134384766152_3498786846546036894_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Photos\188423575_825134384766152_3498786846546036894_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>
