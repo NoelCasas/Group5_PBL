@@ -30,14 +30,14 @@ namespace Group5_PBL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea13 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend13 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button1 = new System.Windows.Forms.Button();
             this.sideMenu = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -54,6 +54,8 @@ namespace Group5_PBL
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.janMonth = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -111,8 +113,6 @@ namespace Group5_PBL
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.sideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.header.SuspendLayout();
@@ -120,6 +120,8 @@ namespace Group5_PBL
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panel1.SuspendLayout();
             this.janMonth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.covidCountP6.SuspendLayout();
             this.virusInfoP1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -136,8 +138,6 @@ namespace Group5_PBL
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -407,33 +407,32 @@ namespace Group5_PBL
             // 
             this.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Custom;
             this.PanelAnimator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.PanelAnimator.DefaultAnimation = animation1;
+            animation7.AnimateOnlyDifferences = true;
+            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
+            animation7.LeafCoeff = 0F;
+            animation7.MaxTime = 1F;
+            animation7.MinTime = 0F;
+            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
+            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
+            animation7.MosaicSize = 0;
+            animation7.Padding = new System.Windows.Forms.Padding(0);
+            animation7.RotateCoeff = 0F;
+            animation7.RotateLimit = 0F;
+            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
+            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
+            animation7.TimeCoeff = 0F;
+            animation7.TransparencyCoeff = 0F;
+            this.PanelAnimator.DefaultAnimation = animation7;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
             this.panel1.Controls.Add(this.janMonth);
+            this.panel1.Controls.Add(this.whatToDoP2);
+            this.panel1.Controls.Add(this.codersP5);
             this.panel1.Controls.Add(this.covidCountP6);
             this.panel1.Controls.Add(this.virusInfoP1);
             this.panel1.Controls.Add(this.designersP4);
-            this.panel1.Controls.Add(this.aboutUsP3);
-            this.panel1.Controls.Add(this.whatToDoP2);
-            this.panel1.Controls.Add(this.codersP5);
             this.PanelAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(240, 56);
@@ -460,6 +459,40 @@ namespace Group5_PBL
             this.janMonth.Size = new System.Drawing.Size(680, 491);
             this.janMonth.TabIndex = 6;
             this.janMonth.Visible = false;
+            // 
+            // chart2
+            // 
+            chartArea13.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea13);
+            this.PanelAnimator.SetDecoration(this.chart2, BunifuAnimatorNS.DecorationType.None);
+            legend13.Name = "Legend1";
+            this.chart2.Legends.Add(legend13);
+            this.chart2.Location = new System.Drawing.Point(22, 212);
+            this.chart2.Name = "chart2";
+            series13.ChartArea = "ChartArea1";
+            series13.Legend = "Legend1";
+            series13.Name = "New Deaths";
+            this.chart2.Series.Add(series13);
+            this.chart2.Size = new System.Drawing.Size(634, 125);
+            this.chart2.TabIndex = 12;
+            this.chart2.Text = "chart2";
+            // 
+            // chart1
+            // 
+            chartArea14.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea14);
+            this.PanelAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
+            legend14.Name = "Legend1";
+            this.chart1.Legends.Add(legend14);
+            this.chart1.Location = new System.Drawing.Point(22, 62);
+            this.chart1.Name = "chart1";
+            series14.ChartArea = "ChartArea1";
+            series14.Legend = "Legend1";
+            series14.Name = "New Cases";
+            this.chart1.Series.Add(series14);
+            this.chart1.Size = new System.Drawing.Size(634, 125);
+            this.chart1.TabIndex = 11;
+            this.chart1.Text = "chart1";
             // 
             // label38
             // 
@@ -651,6 +684,7 @@ namespace Group5_PBL
             this.label28.Size = new System.Drawing.Size(171, 21);
             this.label28.TabIndex = 2;
             this.label28.Text = "Please select a date:";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // label27
             // 
@@ -733,6 +767,7 @@ namespace Group5_PBL
             this.designersP4.Size = new System.Drawing.Size(680, 491);
             this.designersP4.TabIndex = 5;
             this.designersP4.Visible = false;
+            this.designersP4.Paint += new System.Windows.Forms.PaintEventHandler(this.designersP4_Paint);
             // 
             // label17
             // 
@@ -891,7 +926,7 @@ namespace Group5_PBL
             this.aboutUsP3.Controls.Add(this.button2);
             this.aboutUsP3.Controls.Add(this.label6);
             this.PanelAnimator.SetDecoration(this.aboutUsP3, BunifuAnimatorNS.DecorationType.None);
-            this.aboutUsP3.Location = new System.Drawing.Point(6, 6);
+            this.aboutUsP3.Location = new System.Drawing.Point(2, 0);
             this.aboutUsP3.Name = "aboutUsP3";
             this.aboutUsP3.Size = new System.Drawing.Size(680, 491);
             this.aboutUsP3.TabIndex = 3;
@@ -1007,6 +1042,7 @@ namespace Group5_PBL
             // 
             // codersP5
             // 
+            this.codersP5.Controls.Add(this.aboutUsP3);
             this.codersP5.Controls.Add(this.pictureBox11);
             this.codersP5.Controls.Add(this.label18);
             this.codersP5.Controls.Add(this.label19);
@@ -1022,7 +1058,7 @@ namespace Group5_PBL
             this.codersP5.Controls.Add(this.pictureBox10);
             this.codersP5.Controls.Add(this.label26);
             this.PanelAnimator.SetDecoration(this.codersP5, BunifuAnimatorNS.DecorationType.None);
-            this.codersP5.Location = new System.Drawing.Point(8, 6);
+            this.codersP5.Location = new System.Drawing.Point(3, 3);
             this.codersP5.Name = "codersP5";
             this.codersP5.Size = new System.Drawing.Size(680, 491);
             this.codersP5.TabIndex = 6;
@@ -1178,40 +1214,6 @@ namespace Group5_PBL
             this.label26.Text = "Coders";
             this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            this.PanelAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(22, 62);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "New Cases";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(634, 125);
-            this.chart1.TabIndex = 11;
-            this.chart1.Text = "chart1";
-            // 
-            // chart2
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            this.PanelAnimator.SetDecoration(this.chart2, BunifuAnimatorNS.DecorationType.None);
-            legend1.Name = "Legend1";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(22, 212);
-            this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "New Deaths";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(634, 125);
-            this.chart2.TabIndex = 12;
-            this.chart2.Text = "chart2";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1236,6 +1238,8 @@ namespace Group5_PBL
             this.panel1.ResumeLayout(false);
             this.janMonth.ResumeLayout(false);
             this.janMonth.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.covidCountP6.ResumeLayout(false);
             this.covidCountP6.PerformLayout();
             this.virusInfoP1.ResumeLayout(false);
@@ -1258,8 +1262,6 @@ namespace Group5_PBL
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }

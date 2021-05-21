@@ -396,5 +396,15 @@ namespace Group5_PBL
 
             //May
         }
+
+        private void label28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void designersP4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     }
