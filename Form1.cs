@@ -197,5 +197,15 @@ namespace Group5_PBL
                 bunifuFlatButton2.Enabled = true;
             }
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
         }
+
+        private void sideMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
     }

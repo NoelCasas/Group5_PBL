@@ -30,7 +30,7 @@ namespace Group5_PBL
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation7 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.sideMenu = new System.Windows.Forms.Panel();
@@ -47,22 +47,13 @@ namespace Group5_PBL
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -87,24 +78,31 @@ namespace Group5_PBL
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.sideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -112,9 +110,11 @@ namespace Group5_PBL
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -143,6 +143,7 @@ namespace Group5_PBL
             this.sideMenu.Name = "sideMenu";
             this.sideMenu.Size = new System.Drawing.Size(240, 514);
             this.sideMenu.TabIndex = 1;
+            this.sideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.sideMenu_Paint);
             // 
             // bunifuFlatButton1
             // 
@@ -383,28 +384,27 @@ namespace Group5_PBL
             // 
             this.PanelAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Custom;
             this.PanelAnimator.Cursor = null;
-            animation7.AnimateOnlyDifferences = true;
-            animation7.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.BlindCoeff")));
-            animation7.LeafCoeff = 0F;
-            animation7.MaxTime = 1F;
-            animation7.MinTime = 0F;
-            animation7.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicCoeff")));
-            animation7.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation7.MosaicShift")));
-            animation7.MosaicSize = 0;
-            animation7.Padding = new System.Windows.Forms.Padding(0);
-            animation7.RotateCoeff = 0F;
-            animation7.RotateLimit = 0F;
-            animation7.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.ScaleCoeff")));
-            animation7.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation7.SlideCoeff")));
-            animation7.TimeCoeff = 0F;
-            animation7.TransparencyCoeff = 0F;
-            this.PanelAnimator.DefaultAnimation = animation7;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.PanelAnimator.DefaultAnimation = animation1;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
             this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -417,180 +417,32 @@ namespace Group5_PBL
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel6
+            // panel7
             // 
-            this.panel6.Controls.Add(this.pictureBox11);
-            this.panel6.Controls.Add(this.label18);
-            this.panel6.Controls.Add(this.label19);
-            this.panel6.Controls.Add(this.label20);
-            this.panel6.Controls.Add(this.label21);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Controls.Add(this.label22);
-            this.panel6.Controls.Add(this.label23);
-            this.panel6.Controls.Add(this.label24);
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.pictureBox8);
-            this.panel6.Controls.Add(this.pictureBox9);
-            this.panel6.Controls.Add(this.pictureBox10);
-            this.panel6.Controls.Add(this.label26);
-            this.PanelAnimator.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
-            this.panel6.Location = new System.Drawing.Point(8, 6);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(680, 491);
-            this.panel6.TabIndex = 6;
-            this.panel6.Visible = false;
+            this.panel7.Controls.Add(this.label27);
+            this.PanelAnimator.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
+            this.panel7.Location = new System.Drawing.Point(6, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(680, 491);
+            this.panel7.TabIndex = 4;
+            this.panel7.Visible = false;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // pictureBox11
+            // label27
             // 
-            this.PanelAnimator.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox11.TabIndex = 18;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label18, BunifuAnimatorNS.DecorationType.None);
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(449, 304);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 63);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "Age:\r\nEmail:\r\nSocials:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label19, BunifuAnimatorNS.DecorationType.None);
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(449, 119);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 63);
-            this.label19.TabIndex = 16;
-            this.label19.Text = "Age:\r\nEmail:\r\nSocials:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(131, 304);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 63);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "Age:\r\nEmail:\r\nSocials:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(128, 116);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(205, 68);
-            this.label21.TabIndex = 14;
-            this.label21.Text = "Age: 17\r\nEmail: \r\n2020sha01029@iacademy.edu.ph\r\nSocials: princessnaomi.123\r\n";
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.PanelAnimator.SetDecoration(this.button5, BunifuAnimatorNS.DecorationType.None);
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(482, 420);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 57);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Back";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(448, 276);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(159, 28);
-            this.label22.TabIndex = 12;
-            this.label22.Text = "Jorge Jarme";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(448, 91);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(189, 28);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "Keziah Villegas";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(128, 276);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(206, 25);
-            this.label24.TabIndex = 10;
-            this.label24.Text = "Miguel Carandang";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(126, 88);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(163, 28);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "Martha Mora";
-            // 
-            // pictureBox8
-            // 
-            this.PanelAnimator.SetDecoration(this.pictureBox8, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox8.Location = new System.Drawing.Point(337, 276);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.PanelAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox9.Location = new System.Drawing.Point(337, 91);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.PanelAnimator.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox10.Location = new System.Drawing.Point(23, 276);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox10.TabIndex = 6;
-            this.pictureBox10.TabStop = false;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(16, 20);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(138, 41);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Coders";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
+            this.label27.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(17, 18);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(346, 30);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "COVID COUNT OF JANUARY";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.panel2);
             this.panel5.Controls.Add(this.label17);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Controls.Add(this.label15);
@@ -606,11 +458,57 @@ namespace Group5_PBL
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.label9);
             this.PanelAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.panel5.Location = new System.Drawing.Point(8, 6);
+            this.panel5.Location = new System.Drawing.Point(5, 6);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(680, 491);
             this.panel5.TabIndex = 5;
             this.panel5.Visible = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label2);
+            this.PanelAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel2.Size = new System.Drawing.Size(680, 480);
+            this.panel2.TabIndex = 0;
+            this.panel2.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(470, 42);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "CORONA VIRUS DISEASE 19";
+            // 
+            // pictureBox2
+            // 
+            this.PanelAnimator.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(526, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(141, 134);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            this.PanelAnimator.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(28, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(602, 255);
+            this.label2.TabIndex = 0;
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // label17
             // 
@@ -659,6 +557,7 @@ namespace Group5_PBL
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelAnimator.SetDecoration(this.button4, BunifuAnimatorNS.DecorationType.None);
             this.button4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
             this.button4.Location = new System.Drawing.Point(482, 420);
@@ -768,7 +667,7 @@ namespace Group5_PBL
             this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.label6);
             this.PanelAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.Location = new System.Drawing.Point(8, 6);
+            this.panel4.Location = new System.Drawing.Point(6, 6);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(680, 491);
             this.panel4.TabIndex = 3;
@@ -843,7 +742,7 @@ namespace Group5_PBL
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.PanelAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.Location = new System.Drawing.Point(8, 6);
+            this.panel3.Location = new System.Drawing.Point(6, 6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(680, 491);
             this.panel3.TabIndex = 3;
@@ -882,73 +781,178 @@ namespace Group5_PBL
             this.label4.TabIndex = 0;
             this.label4.Text = resources.GetString("label4.Text");
             // 
-            // panel2
+            // panel6
             // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label2);
-            this.PanelAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Location = new System.Drawing.Point(8, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel2.Size = new System.Drawing.Size(680, 480);
-            this.panel2.TabIndex = 0;
-            this.panel2.Visible = false;
+            this.panel6.Controls.Add(this.pictureBox11);
+            this.panel6.Controls.Add(this.label18);
+            this.panel6.Controls.Add(this.label19);
+            this.panel6.Controls.Add(this.label20);
+            this.panel6.Controls.Add(this.label21);
+            this.panel6.Controls.Add(this.button5);
+            this.panel6.Controls.Add(this.label22);
+            this.panel6.Controls.Add(this.label23);
+            this.panel6.Controls.Add(this.label24);
+            this.panel6.Controls.Add(this.label25);
+            this.panel6.Controls.Add(this.pictureBox8);
+            this.panel6.Controls.Add(this.pictureBox9);
+            this.panel6.Controls.Add(this.pictureBox10);
+            this.panel6.Controls.Add(this.label26);
+            this.PanelAnimator.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
+            this.panel6.Location = new System.Drawing.Point(8, 6);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(680, 491);
+            this.panel6.TabIndex = 6;
+            this.panel6.Visible = false;
             // 
-            // label3
+            // pictureBox11
             // 
-            this.label3.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(25, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(470, 42);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "CORONA VIRUS DISEASE 19";
+            this.PanelAnimator.SetDecoration(this.pictureBox11, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox11.TabIndex = 18;
+            this.pictureBox11.TabStop = false;
             // 
-            // pictureBox2
+            // label18
             // 
-            this.PanelAnimator.SetDecoration(this.pictureBox2, BunifuAnimatorNS.DecorationType.None);
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(526, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(141, 134);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.label18.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label18, BunifuAnimatorNS.DecorationType.None);
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(449, 304);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(65, 63);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "Age:\r\nEmail:\r\nSocials:";
             // 
-            // label2
+            // label19
             // 
-            this.PanelAnimator.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(28, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(602, 255);
-            this.label2.TabIndex = 0;
-            this.label2.Text = resources.GetString("label2.Text");
+            this.label19.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label19, BunifuAnimatorNS.DecorationType.None);
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(449, 119);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(65, 63);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "Age:\r\nEmail:\r\nSocials:";
             // 
-            // panel7
+            // label20
             // 
-            this.panel7.Controls.Add(this.label27);
-            this.PanelAnimator.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.panel7.Location = new System.Drawing.Point(9, 6);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(680, 491);
-            this.panel7.TabIndex = 4;
-            this.panel7.Visible = false;
+            this.label20.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label20, BunifuAnimatorNS.DecorationType.None);
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(131, 304);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 63);
+            this.label20.TabIndex = 15;
+            this.label20.Text = "Age:\r\nEmail:\r\nSocials:";
             // 
-            // label27
+            // label21
             // 
-            this.label27.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(25, 21);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(188, 30);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "COVID COUNT";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
+            this.label21.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(128, 116);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(205, 68);
+            this.label21.TabIndex = 14;
+            this.label21.Text = "Age: 17\r\nEmail: \r\n2020sha01029@iacademy.edu.ph\r\nSocials: princessnaomi.123\r\n";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelAnimator.SetDecoration(this.button5, BunifuAnimatorNS.DecorationType.None);
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
+            this.button5.Location = new System.Drawing.Point(482, 420);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(186, 57);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "Back";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label22, BunifuAnimatorNS.DecorationType.None);
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(448, 276);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(159, 28);
+            this.label22.TabIndex = 12;
+            this.label22.Text = "Jorge Jarme";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label23, BunifuAnimatorNS.DecorationType.None);
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(448, 91);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(189, 28);
+            this.label23.TabIndex = 11;
+            this.label23.Text = "Keziah Villegas";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label24, BunifuAnimatorNS.DecorationType.None);
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(128, 276);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(206, 25);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Miguel Carandang";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label25, BunifuAnimatorNS.DecorationType.None);
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(126, 88);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(163, 28);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "Martha Mora";
+            // 
+            // pictureBox8
+            // 
+            this.PanelAnimator.SetDecoration(this.pictureBox8, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox8.Location = new System.Drawing.Point(337, 276);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox8.TabIndex = 8;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.PanelAnimator.SetDecoration(this.pictureBox9, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox9.Location = new System.Drawing.Point(337, 91);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.PanelAnimator.SetDecoration(this.pictureBox10, BunifuAnimatorNS.DecorationType.None);
+            this.pictureBox10.Location = new System.Drawing.Point(23, 276);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox10.TabIndex = 6;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label26, BunifuAnimatorNS.DecorationType.None);
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(16, 20);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(138, 41);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Coders";
+            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // Form1
             // 
@@ -972,14 +976,13 @@ namespace Group5_PBL
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -989,11 +992,12 @@ namespace Group5_PBL
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
         }
