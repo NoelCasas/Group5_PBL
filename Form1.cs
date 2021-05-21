@@ -207,5 +207,10 @@ namespace Group5_PBL
         {
 
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     }
