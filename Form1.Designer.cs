@@ -32,6 +32,12 @@ namespace Group5_PBL
             this.components = new System.ComponentModel.Container();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button1 = new System.Windows.Forms.Button();
             this.sideMenu = new System.Windows.Forms.Panel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -47,11 +53,25 @@ namespace Group5_PBL
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.PanelAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.janMonth = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.covidCountP6 = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.virusInfoP1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.designersP4 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -66,17 +86,17 @@ namespace Group5_PBL
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.aboutUsP3 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.whatToDoP2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.codersP5 = new System.Windows.Forms.Panel();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -91,32 +111,33 @@ namespace Group5_PBL
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.sideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.janMonth.SuspendLayout();
+            this.covidCountP6.SuspendLayout();
+            this.virusInfoP1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.designersP4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.aboutUsP3.SuspendLayout();
+            this.whatToDoP2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.codersP5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -406,12 +427,13 @@ namespace Group5_PBL
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.janMonth);
+            this.panel1.Controls.Add(this.covidCountP6);
+            this.panel1.Controls.Add(this.virusInfoP1);
+            this.panel1.Controls.Add(this.designersP4);
+            this.panel1.Controls.Add(this.aboutUsP3);
+            this.panel1.Controls.Add(this.whatToDoP2);
+            this.panel1.Controls.Add(this.codersP5);
             this.PanelAnimator.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(240, 56);
@@ -420,19 +442,241 @@ namespace Group5_PBL
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // janMonth
             // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label2);
-            this.PanelAnimator.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Location = new System.Drawing.Point(5, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel2.Size = new System.Drawing.Size(680, 480);
-            this.panel2.TabIndex = 0;
-            this.panel2.Visible = false;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.janMonth.Controls.Add(this.chart2);
+            this.janMonth.Controls.Add(this.chart1);
+            this.janMonth.Controls.Add(this.label38);
+            this.janMonth.Controls.Add(this.label37);
+            this.janMonth.Controls.Add(this.label36);
+            this.janMonth.Controls.Add(this.label35);
+            this.janMonth.Controls.Add(this.label34);
+            this.janMonth.Controls.Add(this.button6);
+            this.janMonth.Controls.Add(this.label32);
+            this.janMonth.Controls.Add(this.label33);
+            this.PanelAnimator.SetDecoration(this.janMonth, BunifuAnimatorNS.DecorationType.None);
+            this.janMonth.Location = new System.Drawing.Point(6, 3);
+            this.janMonth.Name = "janMonth";
+            this.janMonth.Size = new System.Drawing.Size(680, 491);
+            this.janMonth.TabIndex = 6;
+            this.janMonth.Visible = false;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label38, BunifuAnimatorNS.DecorationType.None);
+            this.label38.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(372, 425);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(29, 17);
+            this.label38.TabIndex = 10;
+            this.label38.Text = "000";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label37, BunifuAnimatorNS.DecorationType.None);
+            this.label37.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(37, 425);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(36, 17);
+            this.label37.TabIndex = 9;
+            this.label37.Text = "0000";
+            this.label37.Click += new System.EventHandler(this.label37_Click);
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label36, BunifuAnimatorNS.DecorationType.None);
+            this.label36.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(349, 380);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(290, 30);
+            this.label36.TabIndex = 8;
+            this.label36.Text = "Total Deaths this Month";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label35, BunifuAnimatorNS.DecorationType.None);
+            this.label35.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(19, 380);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(279, 30);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "Total Cases this Month";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label34, BunifuAnimatorNS.DecorationType.None);
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(22, 344);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(318, 17);
+            this.label34.TabIndex = 4;
+            this.label34.Text = "New Deaths from COVID-19 Throughout January";
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelAnimator.SetDecoration(this.button6, BunifuAnimatorNS.DecorationType.None);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(581, 437);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 33);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "BACK";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label32, BunifuAnimatorNS.DecorationType.None);
+            this.label32.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(22, 192);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(294, 17);
+            this.label32.TabIndex = 2;
+            this.label32.Text = "New Cases of COVID-19 Throughout January";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label33, BunifuAnimatorNS.DecorationType.None);
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(221, 18);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(220, 36);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "JANUARY 2021";
+            // 
+            // covidCountP6
+            // 
+            this.covidCountP6.Controls.Add(this.bunifuFlatButton5);
+            this.covidCountP6.Controls.Add(this.comboBox1);
+            this.covidCountP6.Controls.Add(this.label28);
+            this.covidCountP6.Controls.Add(this.label27);
+            this.PanelAnimator.SetDecoration(this.covidCountP6, BunifuAnimatorNS.DecorationType.None);
+            this.covidCountP6.Location = new System.Drawing.Point(5, 3);
+            this.covidCountP6.Name = "covidCountP6";
+            this.covidCountP6.Size = new System.Drawing.Size(680, 491);
+            this.covidCountP6.TabIndex = 4;
+            this.covidCountP6.Visible = false;
+            this.covidCountP6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            // 
+            // bunifuFlatButton5
+            // 
+            this.bunifuFlatButton5.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(20)))), ((int)(((byte)(24)))));
+            this.bunifuFlatButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(48)))), ((int)(((byte)(54)))));
+            this.bunifuFlatButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton5.BorderRadius = 0;
+            this.bunifuFlatButton5.ButtonText = "          Proceed";
+            this.bunifuFlatButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelAnimator.SetDecoration(this.bunifuFlatButton5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton5.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton5.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton5.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton5.Iconimage")));
+            this.bunifuFlatButton5.Iconimage_right = null;
+            this.bunifuFlatButton5.Iconimage_right_Selected = null;
+            this.bunifuFlatButton5.Iconimage_Selected = null;
+            this.bunifuFlatButton5.IconMarginLeft = 0;
+            this.bunifuFlatButton5.IconMarginRight = 0;
+            this.bunifuFlatButton5.IconRightVisible = true;
+            this.bunifuFlatButton5.IconRightZoom = 0D;
+            this.bunifuFlatButton5.IconVisible = true;
+            this.bunifuFlatButton5.IconZoom = 90D;
+            this.bunifuFlatButton5.IsTab = false;
+            this.bunifuFlatButton5.Location = new System.Drawing.Point(408, 205);
+            this.bunifuFlatButton5.Name = "bunifuFlatButton5";
+            this.bunifuFlatButton5.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(48)))), ((int)(((byte)(54)))));
+            this.bunifuFlatButton5.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(81)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton5.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton5.selected = false;
+            this.bunifuFlatButton5.Size = new System.Drawing.Size(121, 25);
+            this.bunifuFlatButton5.TabIndex = 5;
+            this.bunifuFlatButton5.Text = "          Proceed";
+            this.bunifuFlatButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton5.Click += new System.EventHandler(this.bunifuFlatButton5_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(180)))), ((int)(((byte)(255)))));
+            this.PanelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox1.DropDownHeight = 90;
+            this.comboBox1.DropDownWidth = 300;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.IntegralHeight = false;
+            this.comboBox1.Items.AddRange(new object[] {
+            "January ",
+            "January (First Week)",
+            "January (Second Week)",
+            "January (Third Week)",
+            "January (Fourth Week)",
+            "Febuary ",
+            "Febuary (First Week) ",
+            "Febuary (Second Week)",
+            "Febuary (Third Week)",
+            "Febuary (Fourth Week)",
+            "March ",
+            "March (First Week)",
+            "Marth (Second Week)",
+            "March (Third Week)",
+            "March (Fourth Week)",
+            "April ",
+            "April (First Week)",
+            "April (Second Week)",
+            "April (Third Week)",
+            "April (Fourth Week)",
+            "May ",
+            "May (First Week)",
+            "May (Second Week)",
+            "May (Third Week)",
+            "May (Fourth Week)"});
+            this.comboBox1.Location = new System.Drawing.Point(162, 172);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(367, 21);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(162, 147);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(171, 21);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Please select a date:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(195, 66);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(247, 30);
+            this.label27.TabIndex = 1;
+            this.label27.Text = "COVID COUNT 2021";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // virusInfoP1
+            // 
+            this.virusInfoP1.Controls.Add(this.label3);
+            this.virusInfoP1.Controls.Add(this.pictureBox2);
+            this.virusInfoP1.Controls.Add(this.label2);
+            this.PanelAnimator.SetDecoration(this.virusInfoP1, BunifuAnimatorNS.DecorationType.None);
+            this.virusInfoP1.Location = new System.Drawing.Point(5, 6);
+            this.virusInfoP1.Name = "virusInfoP1";
+            this.virusInfoP1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.virusInfoP1.Size = new System.Drawing.Size(680, 480);
+            this.virusInfoP1.TabIndex = 0;
+            this.virusInfoP1.Visible = false;
+            this.virusInfoP1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label3
             // 
@@ -467,28 +711,28 @@ namespace Group5_PBL
             this.label2.TabIndex = 0;
             this.label2.Text = resources.GetString("label2.Text");
             // 
-            // panel5
+            // designersP4
             // 
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Controls.Add(this.label11);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.pictureBox7);
-            this.panel5.Controls.Add(this.pictureBox6);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Controls.Add(this.label9);
-            this.PanelAnimator.SetDecoration(this.panel5, BunifuAnimatorNS.DecorationType.None);
-            this.panel5.Location = new System.Drawing.Point(5, 6);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(680, 491);
-            this.panel5.TabIndex = 5;
-            this.panel5.Visible = false;
+            this.designersP4.Controls.Add(this.label17);
+            this.designersP4.Controls.Add(this.label16);
+            this.designersP4.Controls.Add(this.label15);
+            this.designersP4.Controls.Add(this.label14);
+            this.designersP4.Controls.Add(this.button4);
+            this.designersP4.Controls.Add(this.label13);
+            this.designersP4.Controls.Add(this.label12);
+            this.designersP4.Controls.Add(this.label11);
+            this.designersP4.Controls.Add(this.label10);
+            this.designersP4.Controls.Add(this.pictureBox7);
+            this.designersP4.Controls.Add(this.pictureBox6);
+            this.designersP4.Controls.Add(this.pictureBox4);
+            this.designersP4.Controls.Add(this.pictureBox5);
+            this.designersP4.Controls.Add(this.label9);
+            this.PanelAnimator.SetDecoration(this.designersP4, BunifuAnimatorNS.DecorationType.None);
+            this.designersP4.Location = new System.Drawing.Point(5, 6);
+            this.designersP4.Name = "designersP4";
+            this.designersP4.Size = new System.Drawing.Size(680, 491);
+            this.designersP4.TabIndex = 5;
+            this.designersP4.Visible = false;
             // 
             // label17
             // 
@@ -639,19 +883,19 @@ namespace Group5_PBL
             this.label9.TabIndex = 4;
             this.label9.Text = "Designers";
             // 
-            // panel4
+            // aboutUsP3
             // 
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.label6);
-            this.PanelAnimator.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
-            this.panel4.Location = new System.Drawing.Point(6, 6);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(680, 491);
-            this.panel4.TabIndex = 3;
-            this.panel4.Visible = false;
+            this.aboutUsP3.Controls.Add(this.label8);
+            this.aboutUsP3.Controls.Add(this.label7);
+            this.aboutUsP3.Controls.Add(this.button3);
+            this.aboutUsP3.Controls.Add(this.button2);
+            this.aboutUsP3.Controls.Add(this.label6);
+            this.PanelAnimator.SetDecoration(this.aboutUsP3, BunifuAnimatorNS.DecorationType.None);
+            this.aboutUsP3.Location = new System.Drawing.Point(6, 6);
+            this.aboutUsP3.Name = "aboutUsP3";
+            this.aboutUsP3.Size = new System.Drawing.Size(680, 491);
+            this.aboutUsP3.TabIndex = 3;
+            this.aboutUsP3.Visible = false;
             // 
             // label8
             // 
@@ -716,18 +960,18 @@ namespace Group5_PBL
             this.label6.TabIndex = 0;
             this.label6.Text = "Meet The Developers!";
             // 
-            // panel3
+            // whatToDoP2
             // 
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label4);
-            this.PanelAnimator.SetDecoration(this.panel3, BunifuAnimatorNS.DecorationType.None);
-            this.panel3.Location = new System.Drawing.Point(6, 6);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(680, 491);
-            this.panel3.TabIndex = 3;
-            this.panel3.TabStop = true;
-            this.panel3.Visible = false;
+            this.whatToDoP2.Controls.Add(this.pictureBox3);
+            this.whatToDoP2.Controls.Add(this.label5);
+            this.whatToDoP2.Controls.Add(this.label4);
+            this.PanelAnimator.SetDecoration(this.whatToDoP2, BunifuAnimatorNS.DecorationType.None);
+            this.whatToDoP2.Location = new System.Drawing.Point(6, 6);
+            this.whatToDoP2.Name = "whatToDoP2";
+            this.whatToDoP2.Size = new System.Drawing.Size(680, 491);
+            this.whatToDoP2.TabIndex = 3;
+            this.whatToDoP2.TabStop = true;
+            this.whatToDoP2.Visible = false;
             // 
             // pictureBox3
             // 
@@ -761,28 +1005,28 @@ namespace Group5_PBL
             this.label4.TabIndex = 0;
             this.label4.Text = resources.GetString("label4.Text");
             // 
-            // panel6
+            // codersP5
             // 
-            this.panel6.Controls.Add(this.pictureBox11);
-            this.panel6.Controls.Add(this.label18);
-            this.panel6.Controls.Add(this.label19);
-            this.panel6.Controls.Add(this.label20);
-            this.panel6.Controls.Add(this.label21);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Controls.Add(this.label22);
-            this.panel6.Controls.Add(this.label23);
-            this.panel6.Controls.Add(this.label24);
-            this.panel6.Controls.Add(this.label25);
-            this.panel6.Controls.Add(this.pictureBox8);
-            this.panel6.Controls.Add(this.pictureBox9);
-            this.panel6.Controls.Add(this.pictureBox10);
-            this.panel6.Controls.Add(this.label26);
-            this.PanelAnimator.SetDecoration(this.panel6, BunifuAnimatorNS.DecorationType.None);
-            this.panel6.Location = new System.Drawing.Point(8, 6);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(680, 491);
-            this.panel6.TabIndex = 6;
-            this.panel6.Visible = false;
+            this.codersP5.Controls.Add(this.pictureBox11);
+            this.codersP5.Controls.Add(this.label18);
+            this.codersP5.Controls.Add(this.label19);
+            this.codersP5.Controls.Add(this.label20);
+            this.codersP5.Controls.Add(this.label21);
+            this.codersP5.Controls.Add(this.button5);
+            this.codersP5.Controls.Add(this.label22);
+            this.codersP5.Controls.Add(this.label23);
+            this.codersP5.Controls.Add(this.label24);
+            this.codersP5.Controls.Add(this.label25);
+            this.codersP5.Controls.Add(this.pictureBox8);
+            this.codersP5.Controls.Add(this.pictureBox9);
+            this.codersP5.Controls.Add(this.pictureBox10);
+            this.codersP5.Controls.Add(this.label26);
+            this.PanelAnimator.SetDecoration(this.codersP5, BunifuAnimatorNS.DecorationType.None);
+            this.codersP5.Location = new System.Drawing.Point(8, 6);
+            this.codersP5.Name = "codersP5";
+            this.codersP5.Size = new System.Drawing.Size(680, 491);
+            this.codersP5.TabIndex = 6;
+            this.codersP5.Visible = false;
             // 
             // pictureBox11
             // 
@@ -934,76 +1178,39 @@ namespace Group5_PBL
             this.label26.Text = "Coders";
             this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
-            // panel7
+            // chart1
             // 
-            this.panel7.Controls.Add(this.comboBox1);
-            this.panel7.Controls.Add(this.label28);
-            this.panel7.Controls.Add(this.label27);
-            this.PanelAnimator.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
-            this.panel7.Location = new System.Drawing.Point(6, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(680, 491);
-            this.panel7.TabIndex = 4;
-            this.panel7.Visible = false;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            this.PanelAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(22, 62);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "New Cases";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(634, 125);
+            this.chart1.TabIndex = 11;
+            this.chart1.Text = "chart1";
             // 
-            // comboBox1
+            // chart2
             // 
-            this.PanelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "January ",
-            "January (First Week)",
-            "January (Second Week)",
-            "January (Third Week)",
-            "January (Fourth Week)",
-            "Febuary ",
-            "Febuary (First Week) ",
-            "Febuary (Second Week)",
-            "Febuary (Third Week)",
-            "Febuary (Fourth Week)",
-            "March ",
-            "March (First Week)",
-            "Marth (Second Week)",
-            "March (Third Week)",
-            "March (Fourth Week)",
-            "April ",
-            "April (First Week)",
-            "April (Second Week)",
-            "April (Third Week)",
-            "April (Fourth Week)",
-            "May ",
-            "May (First Week)",
-            "May (Second Week)",
-            "May (Third Week)",
-            "May (Fourth Week)"});
-            this.comboBox1.Location = new System.Drawing.Point(161, 175);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(367, 21);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(161, 150);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(171, 21);
-            this.label28.TabIndex = 2;
-            this.label28.Text = "Please select a date:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.PanelAnimator.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(194, 69);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(247, 30);
-            this.label27.TabIndex = 1;
-            this.label27.Text = "COVID COUNT 2021";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            this.PanelAnimator.SetDecoration(this.chart2, BunifuAnimatorNS.DecorationType.None);
+            legend1.Name = "Legend1";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(22, 212);
+            this.chart2.Name = "chart2";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "New Deaths";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(634, 125);
+            this.chart2.TabIndex = 12;
+            this.chart2.Text = "chart2";
             // 
             // Form1
             // 
@@ -1027,28 +1234,32 @@ namespace Group5_PBL
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.janMonth.ResumeLayout(false);
+            this.janMonth.PerformLayout();
+            this.covidCountP6.ResumeLayout(false);
+            this.covidCountP6.PerformLayout();
+            this.virusInfoP1.ResumeLayout(false);
+            this.virusInfoP1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.designersP4.ResumeLayout(false);
+            this.designersP4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.aboutUsP3.ResumeLayout(false);
+            this.aboutUsP3.PerformLayout();
+            this.whatToDoP2.ResumeLayout(false);
+            this.whatToDoP2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.codersP5.ResumeLayout(false);
+            this.codersP5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1070,21 +1281,21 @@ namespace Group5_PBL
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel virusInfoP1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel aboutUsP3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel whatToDoP2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel designersP4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label13;
@@ -1095,7 +1306,7 @@ namespace Group5_PBL
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel codersP5;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
@@ -1114,10 +1325,22 @@ namespace Group5_PBL
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel covidCountP6;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label28;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
+        private System.Windows.Forms.Panel janMonth;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 
