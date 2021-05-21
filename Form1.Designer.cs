@@ -435,9 +435,9 @@ namespace Group5_PBL
             this.label27.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(17, 18);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(346, 30);
+            this.label27.Size = new System.Drawing.Size(195, 30);
             this.label27.TabIndex = 1;
-            this.label27.Text = "COVID COUNT OF JANUARY";
+            this.label27.Text = "COVID COUNT ";
             this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // panel5
