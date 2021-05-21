@@ -93,6 +93,8 @@ namespace Group5_PBL
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.sideMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.header.SuspendLayout();
@@ -419,6 +421,8 @@ namespace Group5_PBL
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.comboBox1);
+            this.panel7.Controls.Add(this.label28);
             this.panel7.Controls.Add(this.label27);
             this.PanelAnimator.SetDecoration(this.panel7, BunifuAnimatorNS.DecorationType.None);
             this.panel7.Location = new System.Drawing.Point(6, 3);
@@ -433,11 +437,11 @@ namespace Group5_PBL
             this.label27.AutoSize = true;
             this.PanelAnimator.SetDecoration(this.label27, BunifuAnimatorNS.DecorationType.None);
             this.label27.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(17, 18);
+            this.label27.Location = new System.Drawing.Point(194, 69);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(195, 30);
+            this.label27.Size = new System.Drawing.Size(247, 30);
             this.label27.TabIndex = 1;
-            this.label27.Text = "COVID COUNT ";
+            this.label27.Text = "COVID COUNT 2021";
             this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
             // panel5
@@ -954,6 +958,26 @@ namespace Group5_PBL
             this.label26.Text = "Coders";
             this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.PanelAnimator.SetDecoration(this.label28, BunifuAnimatorNS.DecorationType.None);
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(161, 150);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(171, 21);
+            this.label28.TabIndex = 2;
+            this.label28.Text = "Please select a date:";
+            // 
+            // comboBox1
+            // 
+            this.PanelAnimator.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(161, 175);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(367, 21);
+            this.comboBox1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1065,6 +1089,8 @@ namespace Group5_PBL
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label28;
     }
 }
 
