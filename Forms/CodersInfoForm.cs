@@ -19,7 +19,7 @@ namespace Group5_PBL.Forms
         private Form childForm;
         private void button5_Click(object sender, EventArgs e)
         {
-            childForm = new DesignersInfoForm();
+            childForm = new AboutUsForm();
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;

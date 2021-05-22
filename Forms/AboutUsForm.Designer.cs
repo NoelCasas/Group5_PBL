@@ -51,7 +51,6 @@ namespace Group5_PBL.Forms
             this.aboutUsP3.Name = "aboutUsP3";
             this.aboutUsP3.Size = new System.Drawing.Size(684, 475);
             this.aboutUsP3.TabIndex = 4;
-            this.aboutUsP3.Visible = false;
             // 
             // label8
             // 
