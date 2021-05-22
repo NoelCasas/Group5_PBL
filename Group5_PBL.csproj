@@ -108,12 +108,6 @@
     <Compile Include="Forms\DesignersInfoForm.Designer.cs">
       <DependentUpon>DesignersInfoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\JanuaryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\JanuaryForm.Designer.cs">
-      <DependentUpon>JanuaryForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\SignsOfInfectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,9 +154,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DesignersInfoForm.resx">
       <DependentUpon>DesignersInfoForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\JanuaryForm.resx">
-      <DependentUpon>JanuaryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignsOfInfectionForm.resx">
       <DependentUpon>SignsOfInfectionForm.cs</DependentUpon>
