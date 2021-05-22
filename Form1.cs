@@ -406,5 +406,10 @@ namespace Group5_PBL
         {
 
         }
+
+        private void janMonth_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     }
