@@ -30,7 +30,6 @@ namespace Group5_PBL.Forms
         private void InitializeComponent()
         {
             this.codersP5 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -40,10 +39,11 @@ namespace Group5_PBL.Forms
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.codersP5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -67,19 +67,12 @@ namespace Group5_PBL.Forms
             this.codersP5.Controls.Add(this.pictureBox9);
             this.codersP5.Controls.Add(this.pictureBox10);
             this.codersP5.Controls.Add(this.label26);
-            this.codersP5.Location = new System.Drawing.Point(60, -20);
+            this.codersP5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.codersP5.Location = new System.Drawing.Point(0, 0);
             this.codersP5.Name = "codersP5";
-            this.codersP5.Size = new System.Drawing.Size(680, 491);
+            this.codersP5.Size = new System.Drawing.Size(800, 450);
             this.codersP5.TabIndex = 7;
             this.codersP5.Visible = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox11.TabIndex = 18;
-            this.pictureBox11.TabStop = false;
             // 
             // label18
             // 
@@ -173,6 +166,24 @@ namespace Group5_PBL.Forms
             this.label25.TabIndex = 9;
             this.label25.Text = "Martha Mora";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(16, 20);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(138, 41);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Coders";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox11.TabIndex = 18;
+            this.pictureBox11.TabStop = false;
+            // 
             // pictureBox8
             // 
             this.pictureBox8.Location = new System.Drawing.Point(337, 276);
@@ -196,16 +207,6 @@ namespace Group5_PBL.Forms
             this.pictureBox10.Size = new System.Drawing.Size(99, 99);
             this.pictureBox10.TabIndex = 6;
             this.pictureBox10.TabStop = false;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(16, 20);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(138, 41);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Coders";
             // 
             // CodersInfoForm
             // 
