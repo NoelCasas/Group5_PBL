@@ -30,20 +30,20 @@ namespace Group5_PBL.Forms
         private void InitializeComponent()
         {
             this.codersP5 = new System.Windows.Forms.Panel();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.codersP5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -54,10 +54,10 @@ namespace Group5_PBL.Forms
             // codersP5
             // 
             this.codersP5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
+            this.codersP5.Controls.Add(this.label3);
+            this.codersP5.Controls.Add(this.label2);
+            this.codersP5.Controls.Add(this.label1);
             this.codersP5.Controls.Add(this.pictureBox11);
-            this.codersP5.Controls.Add(this.label18);
-            this.codersP5.Controls.Add(this.label19);
-            this.codersP5.Controls.Add(this.label20);
             this.codersP5.Controls.Add(this.label21);
             this.codersP5.Controls.Add(this.button5);
             this.codersP5.Controls.Add(this.label22);
@@ -74,47 +74,6 @@ namespace Group5_PBL.Forms
             this.codersP5.Name = "codersP5";
             this.codersP5.Size = new System.Drawing.Size(684, 475);
             this.codersP5.TabIndex = 7;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox11.TabIndex = 18;
-            this.pictureBox11.TabStop = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(449, 304);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(65, 63);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "Age:\r\nEmail:\r\nSocials:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(449, 119);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 63);
-            this.label19.TabIndex = 16;
-            this.label19.Text = "Age:\r\nEmail:\r\nSocials:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(131, 304);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 63);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "Age:\r\nEmail:\r\nSocials:";
             // 
             // label21
             // 
@@ -184,30 +143,6 @@ namespace Group5_PBL.Forms
             this.label25.TabIndex = 9;
             this.label25.Text = "Martha Mora";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(337, 276);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(337, 91);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(23, 276);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox10.TabIndex = 6;
-            this.pictureBox10.TabStop = false;
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -218,6 +153,78 @@ namespace Group5_PBL.Forms
             this.label26.Size = new System.Drawing.Size(138, 41);
             this.label26.TabIndex = 4;
             this.label26.Text = "Coders";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(450, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 68);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Age: \r\nEmail: \r\nkeziahannevillegas@yahoo.com\r\nSocials: Keziah Anne Villegas (FB)\r" +
+    "\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(130, 307);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(205, 85);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Age: 16\r\nEmail: \r\n2020sha01049@iacademy.edu.ph\r\nSocials: Miguel Carandang\r\n\r\n";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(450, 304);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 68);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Age: 17\r\nEmail: \r\n2020sha01029@iacademy.edu.ph\r\nSocials: princessnaomi.123\r\n";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Group5_PBL.Properties.Resources.Martha1;
+            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 18;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(337, 276);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox8.TabIndex = 8;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Group5_PBL.Properties.Resources.Kez;
+            this.pictureBox9.Location = new System.Drawing.Point(337, 91);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 7;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Group5_PBL.Properties.Resources.miguel1;
+            this.pictureBox10.Location = new System.Drawing.Point(23, 276);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 6;
+            this.pictureBox10.TabStop = false;
             // 
             // CodersInfoForm
             // 
@@ -241,9 +248,6 @@ namespace Group5_PBL.Forms
 
         private System.Windows.Forms.Panel codersP5;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label22;
@@ -254,5 +258,8 @@ namespace Group5_PBL.Forms
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

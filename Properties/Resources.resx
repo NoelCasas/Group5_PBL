@@ -121,37 +121,64 @@
   <data name="Exit4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ph Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ph Map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Martha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Martha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rich" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Rich.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Facts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="noel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\noel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MENU2btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MENU2btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="refer_to_manual_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refer_to_manual_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LOGO4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGO4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pulse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pulse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="refer_to_manual_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\refer_to_manual_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LoadscreenLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoadscreenLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Facts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Facts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LoadScreenBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoadScreenBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Covid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Covid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="miguel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\miguel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MENU2btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MENU2btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Jasper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Jasper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lei" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Lei.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoadscreenLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoadscreenLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Covid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Covid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Martha1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Martha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info_50px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_50px1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ph Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ph Map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\Kez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miguel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\miguel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
