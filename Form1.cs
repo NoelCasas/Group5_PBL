@@ -77,6 +77,7 @@ namespace Group5_PBL
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new SignsOfInfectionForm());
             //// Main Lobbies Panels
             //whatToDoP2.Visible = true;
             //virusInfoP1.Visible = false;
@@ -104,8 +105,9 @@ namespace Group5_PBL
             //    bunifuFlatButton1.Enabled = true;
             //}
         }
-        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        private void VirusInfo(object sender, EventArgs e)
         {
+            OpenChildForm(new CovidInfoForm());
             //// Main Lobbies
             //virusInfoP1.Visible = true;
             //whatToDoP2.Visible = false;
@@ -134,8 +136,9 @@ namespace Group5_PBL
             //}
         }
 
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        private void AboutUsButton(object sender, EventArgs e)
         {
+            OpenChildForm(new AboutUsForm());
             //// Main Lobbies
             //aboutUsP3.Visible = true;
             //virusInfoP1.Visible = false;

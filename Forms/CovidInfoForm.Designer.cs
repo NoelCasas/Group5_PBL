@@ -40,15 +40,16 @@ namespace Group5_PBL.Forms
             // 
             // virusInfoP1
             // 
+            this.virusInfoP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
             this.virusInfoP1.Controls.Add(this.label3);
             this.virusInfoP1.Controls.Add(this.pictureBox2);
             this.virusInfoP1.Controls.Add(this.label2);
-            this.virusInfoP1.Location = new System.Drawing.Point(60, -15);
+            this.virusInfoP1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.virusInfoP1.Location = new System.Drawing.Point(0, 0);
             this.virusInfoP1.Name = "virusInfoP1";
             this.virusInfoP1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.virusInfoP1.Size = new System.Drawing.Size(680, 480);
+            this.virusInfoP1.Size = new System.Drawing.Size(684, 475);
             this.virusInfoP1.TabIndex = 1;
-            this.virusInfoP1.Visible = false;
             // 
             // label3
             // 
@@ -84,7 +85,7 @@ namespace Group5_PBL.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(684, 475);
             this.Controls.Add(this.virusInfoP1);
             this.Name = "CovidInfoForm";
             this.Text = "CovidInfoForm";

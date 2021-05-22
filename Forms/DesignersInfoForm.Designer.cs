@@ -53,6 +53,7 @@ namespace Group5_PBL.Forms
             // 
             // designersP4
             // 
+            this.designersP4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
             this.designersP4.Controls.Add(this.label17);
             this.designersP4.Controls.Add(this.label16);
             this.designersP4.Controls.Add(this.label15);
@@ -67,16 +68,18 @@ namespace Group5_PBL.Forms
             this.designersP4.Controls.Add(this.pictureBox4);
             this.designersP4.Controls.Add(this.pictureBox5);
             this.designersP4.Controls.Add(this.label9);
-            this.designersP4.Location = new System.Drawing.Point(60, -20);
+            this.designersP4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.designersP4.ForeColor = System.Drawing.Color.Black;
+            this.designersP4.Location = new System.Drawing.Point(0, 0);
             this.designersP4.Name = "designersP4";
-            this.designersP4.Size = new System.Drawing.Size(680, 491);
+            this.designersP4.Size = new System.Drawing.Size(684, 475);
             this.designersP4.TabIndex = 6;
-            this.designersP4.Visible = false;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.Location = new System.Drawing.Point(449, 304);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(65, 63);
@@ -87,6 +90,7 @@ namespace Group5_PBL.Forms
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(449, 119);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(65, 63);
@@ -97,6 +101,7 @@ namespace Group5_PBL.Forms
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(131, 312);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(65, 63);
@@ -107,6 +112,7 @@ namespace Group5_PBL.Forms
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(129, 119);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(65, 63);
@@ -118,17 +124,20 @@ namespace Group5_PBL.Forms
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(482, 420);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(486, 406);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(186, 57);
             this.button4.TabIndex = 13;
             this.button4.Text = "Back";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(448, 276);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(209, 28);
@@ -139,6 +148,7 @@ namespace Group5_PBL.Forms
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(448, 91);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(146, 28);
@@ -149,6 +159,7 @@ namespace Group5_PBL.Forms
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(128, 276);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(207, 28);
@@ -159,6 +170,7 @@ namespace Group5_PBL.Forms
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(128, 91);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(185, 28);
@@ -201,6 +213,7 @@ namespace Group5_PBL.Forms
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(16, 20);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(180, 41);
@@ -211,7 +224,7 @@ namespace Group5_PBL.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(684, 475);
             this.Controls.Add(this.designersP4);
             this.Name = "DesignersInfoForm";
             this.Text = "DesignersInfoForm";

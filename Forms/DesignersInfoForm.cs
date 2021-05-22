@@ -16,5 +16,18 @@ namespace Group5_PBL.Forms
         {
             InitializeComponent();
         }
+
+        private Form childForm;
+        private void button4_Click(object sender, EventArgs e)
+        {
+            childForm = new DesignersInfoForm();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            designersP4.Controls.Add(childForm);
+            designersP4.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
     }
 }

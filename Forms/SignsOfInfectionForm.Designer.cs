@@ -40,16 +40,16 @@ namespace Group5_PBL.Forms
             // 
             // whatToDoP2
             // 
+            this.whatToDoP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(216)))), ((int)(((byte)(219)))));
             this.whatToDoP2.Controls.Add(this.pictureBox3);
             this.whatToDoP2.Controls.Add(this.label5);
             this.whatToDoP2.Controls.Add(this.label4);
             this.whatToDoP2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.whatToDoP2.Location = new System.Drawing.Point(0, 0);
             this.whatToDoP2.Name = "whatToDoP2";
-            this.whatToDoP2.Size = new System.Drawing.Size(800, 450);
+            this.whatToDoP2.Size = new System.Drawing.Size(684, 475);
             this.whatToDoP2.TabIndex = 4;
             this.whatToDoP2.TabStop = true;
-            this.whatToDoP2.Visible = false;
             // 
             // pictureBox3
             // 
@@ -65,7 +65,8 @@ namespace Group5_PBL.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 21);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(25, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(577, 30);
             this.label5.TabIndex = 1;
@@ -74,7 +75,8 @@ namespace Group5_PBL.Forms
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 66);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(8, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(664, 404);
             this.label4.TabIndex = 0;
@@ -84,7 +86,7 @@ namespace Group5_PBL.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(684, 475);
             this.Controls.Add(this.whatToDoP2);
             this.Name = "SignsOfInfectionForm";
             this.Text = "SignsOfInfectionForm";
