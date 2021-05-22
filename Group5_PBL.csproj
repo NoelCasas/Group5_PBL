@@ -58,11 +58,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AboutUsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutUsForm.Designer.cs">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CodersInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CodersInfoForm.Designer.cs">
+      <DependentUpon>CodersInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CovidCountForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CovidCountForms.Designer.cs">
+      <DependentUpon>CovidCountForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CovidInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CovidInfoForm.Designer.cs">
+      <DependentUpon>CovidInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DesignersInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DesignersInfoForm.Designer.cs">
+      <DependentUpon>DesignersInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\JanuaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\JanuaryForm.Designer.cs">
       <DependentUpon>JanuaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SignsOfInfectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SignsOfInfectionForm.Designer.cs">
+      <DependentUpon>SignsOfInfectionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoadScreen.cs">
       <SubType>Form</SubType>
@@ -87,8 +123,26 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutUsForm.resx">
+      <DependentUpon>AboutUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CodersInfoForm.resx">
+      <DependentUpon>CodersInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CovidCountForms.resx">
+      <DependentUpon>CovidCountForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CovidInfoForm.resx">
+      <DependentUpon>CovidInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DesignersInfoForm.resx">
+      <DependentUpon>DesignersInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\JanuaryForm.resx">
       <DependentUpon>JanuaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SignsOfInfectionForm.resx">
+      <DependentUpon>SignsOfInfectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoadScreen.resx">
       <DependentUpon>LoadScreen.cs</DependentUpon>
