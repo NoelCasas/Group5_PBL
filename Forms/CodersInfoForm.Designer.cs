@@ -30,6 +30,9 @@ namespace Group5_PBL.Forms
         private void InitializeComponent()
         {
             this.codersP5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
@@ -37,9 +40,6 @@ namespace Group5_PBL.Forms
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -74,6 +74,40 @@ namespace Group5_PBL.Forms
             this.codersP5.Name = "codersP5";
             this.codersP5.Size = new System.Drawing.Size(684, 475);
             this.codersP5.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(450, 304);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(205, 68);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Age: 17\r\nEmail: \r\n2020sha01029@iacademy.edu.ph\r\nSocials: princessnaomi.123\r\n";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(130, 307);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(205, 85);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Age: 16\r\nEmail: \r\n2020sha01049@iacademy.edu.ph\r\nSocials: Miguel Carandang\r\n\r\n";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(450, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(203, 68);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Age: \r\nEmail: \r\nkeziahannevillegas@yahoo.com\r\nSocials: Keziah Anne Villegas (FB)\r" +
+    "\n";
             // 
             // label21
             // 
@@ -154,40 +188,6 @@ namespace Group5_PBL.Forms
             this.label26.TabIndex = 4;
             this.label26.Text = "Coders";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(450, 122);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 68);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Age: \r\nEmail: \r\nkeziahannevillegas@yahoo.com\r\nSocials: Keziah Anne Villegas (FB)\r" +
-    "\n";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(130, 307);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 85);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Age: 16\r\nEmail: \r\n2020sha01049@iacademy.edu.ph\r\nSocials: Miguel Carandang\r\n\r\n";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(450, 304);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 68);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Age: 17\r\nEmail: \r\n2020sha01029@iacademy.edu.ph\r\nSocials: princessnaomi.123\r\n";
-            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Group5_PBL.Properties.Resources.Martha1;
@@ -200,9 +200,11 @@ namespace Group5_PBL.Forms
             // 
             // pictureBox8
             // 
+            this.pictureBox8.Image = global::Group5_PBL.Properties.Resources.jorge;
             this.pictureBox8.Location = new System.Drawing.Point(337, 276);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 8;
             this.pictureBox8.TabStop = false;
             // 

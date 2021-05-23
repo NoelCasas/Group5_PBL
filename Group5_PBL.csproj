@@ -223,6 +223,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="pictures\Jasper.jpg" />
+    <None Include="pictures\jorge.png" />
     <Content Include="pictures\Kez.png" />
     <Content Include="pictures\Lei.jpg" />
     <Content Include="pictures\Martha.png" />

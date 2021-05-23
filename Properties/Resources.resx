@@ -157,6 +157,9 @@
   <data name="info_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="miguel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\miguel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Jasper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\Jasper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,7 +181,7 @@
   <data name="Kez" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\pictures\Kez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="miguel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\pictures\miguel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jorge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\pictures\jorge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
