@@ -33,17 +33,17 @@ namespace Group5_PBL.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label21 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.codersP5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -84,7 +84,7 @@ namespace Group5_PBL.Forms
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(205, 68);
             this.label3.TabIndex = 21;
-            this.label3.Text = "Age: 17\r\nEmail: \r\n2020sha01029@iacademy.edu.ph\r\nSocials: princessnaomi.123\r\n";
+            this.label3.Text = "Age: 17\r\nEmail: \r\n2020sha01095@iacademy.edu.ph\r\nSocials: jcjarme\r\n";
             // 
             // label2
             // 
@@ -108,6 +108,16 @@ namespace Group5_PBL.Forms
             this.label1.TabIndex = 19;
             this.label1.Text = "Age: \r\nEmail: \r\nkeziahannevillegas@yahoo.com\r\nSocials: Keziah Anne Villegas (FB)\r" +
     "\n";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Group5_PBL.Properties.Resources.Martha1;
+            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 18;
+            this.pictureBox11.TabStop = false;
             // 
             // label21
             // 
@@ -177,27 +187,6 @@ namespace Group5_PBL.Forms
             this.label25.TabIndex = 9;
             this.label25.Text = "Martha Mora";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Location = new System.Drawing.Point(16, 20);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(138, 41);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "Coders";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Group5_PBL.Properties.Resources.Martha1;
-            this.pictureBox11.Location = new System.Drawing.Point(23, 91);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(99, 99);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 18;
-            this.pictureBox11.TabStop = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Group5_PBL.Properties.Resources.jorge;
@@ -227,6 +216,17 @@ namespace Group5_PBL.Forms
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 6;
             this.pictureBox10.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Location = new System.Drawing.Point(16, 20);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(138, 41);
+            this.label26.TabIndex = 4;
+            this.label26.Text = "Coders";
             // 
             // CodersInfoForm
             // 
