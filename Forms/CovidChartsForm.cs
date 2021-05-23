@@ -50,7 +50,7 @@ namespace Group5_PBL.Forms
             await sr.ReadLineAsync();
             while (sr.Peek() != -1)
             {
-                string [] covidCase = ((await sr.ReadLineAsync())?.Split(','));
+                //string [] covidCase = ((await sr.ReadLineAsync())?.Split(','));
                 dataset.Add((await sr.ReadLineAsync())?.Split(','));
             }
             sr.Close();
@@ -148,36 +148,6 @@ namespace Group5_PBL.Forms
             cartesianChart1.Series.Add(new LineSeries
             {
                 Title = "Total Deaths",
-                Values = totalDeaths,
-            });
-            cartesianChart1.AxisX.Add(new Axis
-            {
-                Title = "Date",
-                Labels = dates
-            });
-
-            // new deaths
-            //////
-            foreach (var data in dataset)
-            {
-                var newDate = data[3].Replace('-', '/');
-                if (DateTime.Parse(newDate) >= startDate && DateTime.Parse(newDate) <= endDate)
-                {
-                    var index = data[8].IndexOf('.');
-                    var newNum = int.Parse(data[8].Substring(0, index));
-                    numNewDeaths.Add(DateTime.Parse(newDate), newNum);
-                    dates.Add(newDate);
-                }
-            }
-
-            ChartValues<ObservableValue> newDeaths = new ChartValues<ObservableValue>();
-            foreach (var numNewDeathsValue in numNewDeaths.Values)
-            {
-               newDeaths.Add(new ObservableValue(numNewDeathsValue));
-            }
-            cartesianChart1.Series.Add(new LineSeries
-            {
-                Title = "New Deaths",
                 Values = totalDeaths,
             });
             cartesianChart1.AxisX.Add(new Axis
