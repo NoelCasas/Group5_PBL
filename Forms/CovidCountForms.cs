@@ -42,6 +42,16 @@ namespace Group5_PBL.Forms
                 startDate = DateTime.Parse("2021/01/01");
                 endDate = DateTime.Parse("2021/01/31");
             }
+            if (comboBox1.SelectedIndex == 1)
+            {
+                startDate = DateTime.Parse("2021/01/01");
+                endDate = DateTime.Parse("2021/01/02");
+            }
+            if (comboBox1.SelectedIndex == 2)
+            {
+                startDate = DateTime.Parse("2021/01/03");
+                endDate = DateTime.Parse("2021/01/09");
+            }
         }
     }
 }

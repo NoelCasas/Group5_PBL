@@ -30,7 +30,7 @@ namespace Group5_PBL.Forms
         public CovidChartsForm(DateTime startDate, DateTime endDate)
         {
             client = new HttpClient();
-            sw = new StreamWriter($@"{AppContext.BaseDirectory}/covid.csv");
+            sw = new StreamWriter("covid.csv");
             dataset = new List<string[]>();
             numCases = new Dictionary<DateTime, int>();
             this.startDate = startDate;
@@ -44,6 +44,7 @@ namespace Group5_PBL.Forms
             await sr.ReadLineAsync();
             while (sr.Peek() != -1)
             {
+                string[] name = ((await sr.ReadLineAsync())?.Split(','));
                 dataset.Add((await sr.ReadLineAsync())?.Split(','));
             }
             sr.Close();
