@@ -46,7 +46,8 @@ namespace Group5_PBL.Forms
             // 
             // cartesianChart1
             // 
-            this.cartesianChart1.BackColor = System.Drawing.Color.White;
+            this.cartesianChart1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cartesianChart1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cartesianChart1.Location = new System.Drawing.Point(12, 33);
             this.cartesianChart1.Name = "cartesianChart1";
             this.cartesianChart1.Size = new System.Drawing.Size(660, 383);

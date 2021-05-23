@@ -39,18 +39,43 @@ namespace Group5_PBL.Forms
         {
             if (comboBox1.SelectedIndex == 0)
             {
-                startDate = DateTime.Parse("2021/01/01");
-                endDate = DateTime.Parse("2021/01/31");
+                startDate = new DateTime(2021, 1, 1);
+                endDate = new DateTime(2021, 1, 31);
             }
             if (comboBox1.SelectedIndex == 1)
             {
-                startDate = DateTime.Parse("2021/01/01");
-                endDate = DateTime.Parse("2021/01/02");
+                startDate = new DateTime(2021,1,3);
+                endDate = new DateTime(2021,1,9);
             }
             if (comboBox1.SelectedIndex == 2)
             {
-                startDate = DateTime.Parse("2021/01/03");
-                endDate = DateTime.Parse("2021/01/09");
+                startDate = new DateTime(2021, 1, 10);
+                endDate = new DateTime(2021, 1, 16);
+            }
+            if (comboBox1.SelectedIndex == 3)
+            {
+                startDate = new DateTime(2021, 1, 17);
+                endDate = new DateTime(2021, 1, 23);
+            }
+            if (comboBox1.SelectedIndex == 4)
+            {
+                startDate = new DateTime(2021, 1, 24);
+                endDate = new DateTime(2021, 1, 30);
+            }
+            if (comboBox1.SelectedIndex == 5)
+            {
+                startDate = new DateTime(2021, 2, 1);
+                endDate = new DateTime(2021, 2, 28);
+            }
+            if (comboBox1.SelectedIndex == 6)
+            {
+                startDate = new DateTime(2021, 2, 7);
+                endDate = new DateTime(2021, 2, 13);
+            }
+            if (comboBox1.SelectedIndex == 7)
+            {
+                startDate = new DateTime(2021, 2, 14);
+                endDate = new DateTime(2021, 2, 20);
             }
         }
     }
