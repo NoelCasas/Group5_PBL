@@ -112,6 +112,31 @@ namespace Group5_PBL.Forms
                 startDate = new DateTime(2021, 3, 28);
                 endDate = new DateTime(2021, 4, 3);
             }
+            if (comboBox1.SelectedIndex == 15) //April
+            {
+                startDate = new DateTime(2021, 4, 1);
+                endDate = new DateTime(2021, 4, 30);
+            }
+            if (comboBox1.SelectedIndex == 16) //1st week of April
+            {
+                startDate = new DateTime(2021, 4, 4);
+                endDate = new DateTime(2021, 4, 10);
+            }
+            if (comboBox1.SelectedIndex == 17) //2nd week of april
+            {
+                startDate = new DateTime(2021, 4, 11);
+                endDate = new DateTime(2021, 4, 17);
+            }
+            if (comboBox1.SelectedIndex == 18) //3rd week of april
+            {
+                startDate = new DateTime(2021, 4, 18);
+                endDate = new DateTime(2021, 4, 24);
+            }
+            if (comboBox1.SelectedIndex == 19) //4th week of april
+            {
+                startDate = new DateTime(2021, 4, 25);
+                endDate = new DateTime(2021, 4, 29);
+            }
 
 
         }
