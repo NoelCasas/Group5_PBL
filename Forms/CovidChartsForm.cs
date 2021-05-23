@@ -173,7 +173,7 @@ namespace Group5_PBL.Forms
             ChartValues<ObservableValue> newDeaths = new ChartValues<ObservableValue>();
             foreach (var numNewDeathsValue in numNewDeaths.Values)
             {
-               newDeaths.Add(new ObservableValue(numTotalDeathsValue));
+               newDeaths.Add(new ObservableValue(numNewDeathsValue));
             }
             cartesianChart1.Series.Add(new LineSeries
             {
