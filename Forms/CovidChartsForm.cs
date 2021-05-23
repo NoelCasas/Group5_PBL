@@ -36,6 +36,7 @@ namespace Group5_PBL.Forms
             dataset = new List<string[]>();
             numCases = new Dictionary<DateTime, int>();
             numTotalCases = new Dictionary<DateTime, int>();
+            numTotalDeaths = new Dictionary<DateTime, int>();
             this.startDate = startDate;
             this.endDate = endDate;
             InitializeComponent();
