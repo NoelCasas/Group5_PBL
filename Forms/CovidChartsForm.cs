@@ -86,16 +86,16 @@ namespace Group5_PBL.Forms
             {
                 cases.Add(new ObservableValue(numCasesValue));
             }
-            cartesianChart1.Series.Add(new LineSeries
-            {
-                Title = "Cases",
-                Values = cases,
-            });
-            cartesianChart1.AxisX.Add(new Axis
-            {
-                Title = "Date",
-                Labels = dates
-            });
+            //cartesianChart1.Series.Add(new LineSeries
+            //{
+            //    Title = "Cases",
+            //    Values = cases,
+            //});
+            //cartesianChart1.AxisX.Add(new Axis
+            //{
+            //    Title = "Date",
+            //    Labels = dates
+            //});
 
             /////
             //var dates = new List<string>();
@@ -116,16 +116,16 @@ namespace Group5_PBL.Forms
             {
                 totalCases.Add(new ObservableValue(numTotalCasesValue));
             }
-            cartesianChart1.Series.Add(new LineSeries
-            {
-                Title = "Total Cases",
-                Values = totalCases,
-            });
-            cartesianChart1.AxisX.Add(new Axis
-            {
-                Title = "Date",
-                Labels = dates
-            });
+            //cartesianChart1.Series.Add(new LineSeries
+            //{
+            //    Title = "Total Cases",
+            //    Values = totalCases,
+            //});
+            //cartesianChart1.AxisX.Add(new Axis
+            //{
+            //    Title = "Date",
+            //    Labels = dates
+            //});
             //
             // totalDeaths
             foreach (var data in dataset)
@@ -145,16 +145,37 @@ namespace Group5_PBL.Forms
             {
                 totalDeaths.Add(new ObservableValue(numTotalDeathsValue));
             }
-            cartesianChart1.Series.Add(new LineSeries
+            //cartesianChart1.Series.Add(new LineSeries
+            //{
+            //    Title = "Total Deaths",
+            //    Values = totalDeaths,
+            //});
+            //cartesianChart1.AxisX.Add(new Axis
+            //{
+            //    Title = "Date",
+            //    Labels = dates
+            //});
+
+            pieChart1.Series = new SeriesCollection
             {
-                Title = "Total Deaths",
-                Values = totalDeaths,
-            });
-            cartesianChart1.AxisX.Add(new Axis
-            {
-                Title = "Date",
-                Labels = dates
-            });
+                new PieSeries
+                {
+                    Title = "Total Cases",
+                    Values = totalCases
+                },
+                new PieSeries
+                {
+                    Title = "New Cases",
+                    Values = cases
+                },
+                new PieSeries
+                {
+                    Title = "Total Deaths",
+                    Values = totalDeaths
+                }
+            };
+
+            pieChart1.LegendLocation = LegendLocation.Bottom;
         }
 
         private async void FormLoad(object sender, EventArgs e)
