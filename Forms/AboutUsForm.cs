@@ -31,7 +31,7 @@ namespace Group5_PBL.Forms
             childForm.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void CodersInfo(object sender, EventArgs e)
         {
             childForm = new CodersInfoForm();
             childForm.TopLevel = false;
