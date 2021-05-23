@@ -25,6 +25,7 @@ namespace Group5_PBL.Forms
         private List<string[]> dataset;
         private Dictionary<DateTime, int> numCases;
         private Dictionary<DateTime, int> numTotalCases;
+        private Dictionary<DateTime, int> numTotalDeaths;
         private DateTime startDate;
         private DateTime endDate;
 
@@ -116,6 +117,35 @@ namespace Group5_PBL.Forms
             {
                 Title = "Total Cases",
                 Values = totalCases,
+            });
+            cartesianChart1.AxisX.Add(new Axis
+            {
+                Title = "Date",
+                Labels = dates
+            });
+            //
+            // totalDeaths
+            foreach (var data in dataset)
+            {
+                var newDate = data[3].Replace('-', '/');
+                if (DateTime.Parse(newDate) >= startDate && DateTime.Parse(newDate) <= endDate)
+                {
+                    var index = data[7].IndexOf('.');
+                    var newNum = int.Parse(data[7].Substring(0, index));
+                    numTotalDeaths.Add(DateTime.Parse(newDate), newNum);
+                    dates.Add(newDate);
+                }
+            }
+
+            ChartValues<ObservableValue> totalDeaths = new ChartValues<ObservableValue>();
+            foreach (var numTotalDeathsValue in numTotalDeaths.Values)
+            {
+                totalDeaths.Add(new ObservableValue(numTotalDeathsValue));
+            }
+            cartesianChart1.Series.Add(new LineSeries
+            {
+                Title = "Total Deaths",
+                Values = totalDeaths,
             });
             cartesianChart1.AxisX.Add(new Axis
             {
