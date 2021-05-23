@@ -24,6 +24,7 @@ namespace Group5_PBL.Forms
         private StreamReader sr;
         private List<string[]> dataset;
         private Dictionary<DateTime, int> numCases;
+        private Dictionary<DateTime, int> numTotalCases;
         private DateTime startDate;
         private DateTime endDate;
 
@@ -33,6 +34,7 @@ namespace Group5_PBL.Forms
             sw = new StreamWriter("covid.csv");
             dataset = new List<string[]>();
             numCases = new Dictionary<DateTime, int>();
+            numTotalCases = new Dictionary<DateTime, int>();
             this.startDate = startDate;
             this.endDate = endDate;
             InitializeComponent();
@@ -84,6 +86,36 @@ namespace Group5_PBL.Forms
             {
                 Title = "Cases",
                 Values = cases,
+            });
+            cartesianChart1.AxisX.Add(new Axis
+            {
+                Title = "Date",
+                Labels = dates
+            });
+
+            /////
+            //var dates = new List<string>();
+            foreach (var data in dataset)
+            {
+                var newDate = data[3].Replace('-', '/');
+                if (DateTime.Parse(newDate) >= startDate && DateTime.Parse(newDate) <= endDate)
+                {
+                    var index = data[4].IndexOf('.');
+                    var newNum = int.Parse(data[4].Substring(0, index));
+                    numTotalCases.Add(DateTime.Parse(newDate), newNum);
+                    dates.Add(newDate);
+                }
+            }
+
+            ChartValues<ObservableValue> totalCases = new ChartValues<ObservableValue>();
+            foreach (var numTotalCasesValue in numTotalCases.Values)
+            {
+                totalCases.Add(new ObservableValue(numTotalCasesValue));
+            }
+            cartesianChart1.Series.Add(new LineSeries
+            {
+                Title = "Total Cases",
+                Values = totalCases,
             });
             cartesianChart1.AxisX.Add(new Axis
             {
