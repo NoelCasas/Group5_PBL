@@ -26,6 +26,7 @@ namespace Group5_PBL.Forms
         private Dictionary<DateTime, int> numCases;
         private Dictionary<DateTime, int> numTotalCases;
         private Dictionary<DateTime, int> numTotalDeaths;
+        private Dictionary<DateTime, int> numNewDeaths;
         private DateTime startDate;
         private DateTime endDate;
 
@@ -37,6 +38,7 @@ namespace Group5_PBL.Forms
             numCases = new Dictionary<DateTime, int>();
             numTotalCases = new Dictionary<DateTime, int>();
             numTotalDeaths = new Dictionary<DateTime, int>();
+            numNewDeaths = new Dictionary<DateTime, int>();
             this.startDate = startDate;
             this.endDate = endDate;
             InitializeComponent();
@@ -146,6 +148,36 @@ namespace Group5_PBL.Forms
             cartesianChart1.Series.Add(new LineSeries
             {
                 Title = "Total Deaths",
+                Values = totalDeaths,
+            });
+            cartesianChart1.AxisX.Add(new Axis
+            {
+                Title = "Date",
+                Labels = dates
+            });
+
+            // new deaths
+            //////
+            foreach (var data in dataset)
+            {
+                var newDate = data[3].Replace('-', '/');
+                if (DateTime.Parse(newDate) >= startDate && DateTime.Parse(newDate) <= endDate)
+                {
+                    var index = data[8].IndexOf('.');
+                    var newNum = int.Parse(data[8].Substring(0, index));
+                    numNewDeaths.Add(DateTime.Parse(newDate), newNum);
+                    dates.Add(newDate);
+                }
+            }
+
+            ChartValues<ObservableValue> newDeaths = new ChartValues<ObservableValue>();
+            foreach (var numNewDeathsValue in numNewDeaths.Values)
+            {
+               newDeaths.Add(new ObservableValue(numTotalDeathsValue));
+            }
+            cartesianChart1.Series.Add(new LineSeries
+            {
+                Title = "New Deaths",
                 Values = totalDeaths,
             });
             cartesianChart1.AxisX.Add(new Axis
