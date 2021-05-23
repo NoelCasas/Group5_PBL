@@ -44,7 +44,7 @@ namespace Group5_PBL.Forms
             await sr.ReadLineAsync();
             while (sr.Peek() != -1)
             {
-                string[] name = ((await sr.ReadLineAsync())?.Split(','));
+                string [] covidCase = ((await sr.ReadLineAsync())?.Split(','));
                 dataset.Add((await sr.ReadLineAsync())?.Split(','));
             }
             sr.Close();

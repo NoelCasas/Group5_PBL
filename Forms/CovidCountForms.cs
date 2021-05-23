@@ -148,7 +148,7 @@ namespace Group5_PBL.Forms
                 endDate = new DateTime(2021, 5, 8);
             }
             if (comboBox1.SelectedIndex == 22) //2nd week of May
-            
+            { 
                 startDate = new DateTime(2021, 5, 9);
                 endDate = new DateTime(2021, 5, 15);
             }
